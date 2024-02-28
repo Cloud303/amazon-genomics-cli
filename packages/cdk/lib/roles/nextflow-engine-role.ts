@@ -39,7 +39,7 @@ export class NextflowEngineRole extends Role {
     headJobBatchPolicy.addStatements(
       new PolicyStatement({
         effect: Effect.ALLOW,
-        actions: ["batch:TerminateJob","batch:TagResource"],
+        actions: ["batch:TerminateJob",""],
         resources: ["*"],
       })
     );
